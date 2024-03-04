@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.clock {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.suggestions-section {
+  margin-top: 20px;
+}
+
+#suggestionsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#suggestionsList li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#suggestionsList li:hover {
+  background-color: #e0e0e0;
+}
+
+#suggestionsList li:nth-child(odd) {
+  background-color: #c7ecee; /* Light Blue */
+}
+
+#suggestionsList li:nth-child(even) {
+  background-color: #ff7979; /* Light Red */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.show-message {
+  animation: slideIn 0.5s forwards;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#congratsMessage {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
+
+.datetime-section {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  #datetime {
+    font-size: 14px;
+  }
+  
+  .suggestions-section {
+    margin-top: 20px;
+  }
+  
+  #suggestionsList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #suggestionsList li {
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #suggestionsList li:hover {
+    background-color: #e0e0e0;
+  }
+
+  .clock {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    position: relative; /* Add position relative */
+  }
+  
+  .clock img {
+    position: absolute;
+    top: 50%;
+    right: -40px; /* Adjust as needed */
+    transform: translateY(-50%);
+    animation: slideIn 0.5s forwards;
+  }
+  
+  /* Adjust other styles as needed */
+  .datetime-section {
+    text-align: center; /* Center the text */
+    margin-bottom: 10px;
+  }
+  
+  #datetime {
+    font-size: 18px; /* Increase font size for better visibility */
+    display: inline-block; /* Ensure inline block to center properly */
+    margin-right: 10px; /* Add margin for separation from image */
+  }
+  
+  /* Keep other styles intact */
+  
+  
